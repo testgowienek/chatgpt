@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>ZAKŁADKI W HTML</title>
+</head>
+<body>
+  <!-- Blok nagłówkowy -->
+  <header>
+    <h1>Zakładki na stronie WWW</h1>
+  </header>
+
+  <!-- Blok główny -->
+  <main>
+    <article>
+      <!-- Sekcja spisu treści -->
+      <section>
+        <h2>Spis treści</h2>
+        <ul>
+          <li>Sekcja pierwsza</li>
+          <li>Sekcja druga</li>
+          <li>Sekcja trzecia</li>
+        </ul>
+      </section>
+
+      <!-- Sekcja pierwsza -->
+      <section>
+        <h3>Sekcja pierwsza</h3>
+        <img src="https://via.placeholder.com/650x500" alt="Obrazek sekcji pierwszej" width="650" height="500">
+        <p>To jest pierwszy paragraf sekcji pierwszej.</p>
+        <p>To jest drugi paragraf sekcji pierwszej.</p>
+        <p>To jest trzeci paragraf sekcji pierwszej.</p>
+        <p>To jest czwarty paragraf sekcji pierwszej.</p>
+        <p>To jest piąty paragraf sekcji pierwszej.</p>
+      </section>
+
+      <!-- Sekcja druga -->
+      <section>
+        <h3>Sekcja druga</h3>
+        <img src="https://via.placeholder.com/650x500" alt="Obrazek sekcji drugiej" width="650
