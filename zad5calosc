@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>ZAKŁADKI W HTML</title>
+</head>
+<body>
+  <!-- Blok nagłówkowy -->
+  <header>
+    <h1>Zakładki na stronie WWW</h1>
+  </header>
+
+  <!-- Blok główny -->
+  <main>
+    <article>
+      <!-- Sekcja spisu treści -->
+      <section>
+        <h2>Spis treści</h2>
+        <ul>
+          <li><a href="#sekcja1">Sekcja pierwsza</a></li>
+          <li><a href="#sekcja2">Sekcja druga</a></li>
+          <li><a href="#sekcja3">Sekcja trzecia</a></li>
+        </ul>
+      </section>
+
+      <!-- Sekcja pierwsza -->
+      <section id="sekcja1">
+        <h3>Sekcja pierwsza</h3>
+        <img src="https://via.placeholder.com/650x500" alt="Obrazek sekcji pierwszej" width="650" height="500">
+        <p>To jest pierwszy paragraf sekcji pierwszej.</p>
+        <p>To jest drugi paragraf sekcji pierwszej.</p>
+        <p>To jest trzeci paragraf sekcji pierwszej.</p>
+        <p>To jest czwarty paragraf sekcji pierwszej.</p>
+        <p>To jest piąty paragraf sekcji pierwszej.</p>
+      </section>
+
+      <!-- Sekcja druga -->
+      <section id="sekcja2">
+        <h3>Sekcja druga</h3>
+        <img src="https://via.placeholder.com/650x500" alt="Obrazek sekcji drugiej" width="650" height="500">
+        <p>To jest pierwszy paragraf sekcji drugiej.</p>
+        <p>To jest drugi paragraf sekcji drugiej.</p>
+        <p>To jest trzeci paragraf sekcji drugiej.</p>
+        <p>To jest czwarty paragraf sekcji drugiej.</p>
+        <p>To jest piąty paragraf sekcji drugiej.</p>
+      </section>
+
+      <!-- Sekcja trzecia -->
+      <section id="sekcja3">
+        <h3>Sekcja trzecia</h3>
+        <img src="https://via.placeholder.com/650x500" alt="Obrazek sekcji trzeciej" width="650" height="500">
+        <p>To jest pierwszy paragraf sekcji trzeciej.</p>
+        <p>To jest drugi paragraf sekcji trzeciej.</p>
+        <p>To jest trzeci paragraf sekcji trzeciej.</p>
+        <p>To jest czwarty paragraf sekcji trzeciej.</p>
+        <p>To jest piąty paragraf sekcji trzeciej.</p>
+      </section>
+    </article>
+  </main>
+
+  <!-- Blok stopki -->
+  <footer>
+    <p>Stronę wykonał: <i>Twoje Imię i Nazwisko</i></p>
+  </footer>
+</body>
+</html>
