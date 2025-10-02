@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Flagi państw</title>
+</head>
+<body>
+  <h2>Flagi państw</h2>
+  <ul>
+    <li>
+      <a href="https://pl.wikipedia.org/wiki/Polska" target="_blank">
+        <img src="https://flagcdn.com/w320/pl.png" alt="Polska" width="200" height="150">
+      </a>
+    </li>
+    <li>
+      <a href="https://pl.wikipedia.org/wiki/Niemcy" target="_blank">
+        <img src="https://flagcdn.com/w320/de.png" alt="Niemcy" width="200" height="150">
+      </a>
+    </li>
+    <li>
+      <a href="https://pl.wikipedia.org/wiki/Francja" target="_blank">
+        <img src="https://flagcdn.com/w320/fr.png" alt="Francja" width="200" height="150">
+      </a>
+    </li>
+    <li>
+      <a href="https://pl.wikipedia.org/wiki/W%C5%82ochy" target="_blank">
+        <img src="https://flagcdn.com/w320/it.png" alt="Włochy" width="200" height="150">
+      </a>
+    </li>
+    <li>
+      <a href="https://pl.wikipedia.org/wiki/Japonia" target="_blank">
+        <img src="https://flagcdn.com/w320/jp.png" alt="Japonia" width="200" height="150">
+      </a>
+    </li>
+  </ul>
+</body>
+</html>
