@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>ZAKŁADKI W HTML</title>
+</head>
+<body>
+  <!-- Blok nagłówkowy -->
+  <header>
+    <h1>Zakładki na stronie WWW</h1>
+  </header>
+
+  <!-- Blok główny -->
+  <main>
+    <article>
+      <section>
+        <h3>Sekcja pierwsza</h3>
+        <p>To jest pierwszy paragraf sekcji pierwszej.</p>
+        <p>To jest drugi paragraf sekcji pierwszej.</p>
+        <p>To jest trzeci paragraf sekcji pierwszej.</p>
+        <p>To jest czwarty paragraf sekcji pierwszej.</p>
+        <p>To jest piąty paragraf sekcji pierwszej.</p>
+      </section>
+
+      <section>
+        <h3>Sekcja druga</h3>
+        <p>To jest pierwszy paragraf sekcji drugiej.</p>
+        <p>To jest drugi paragraf sekcji drugiej.</p>
+        <p>To jest trzeci paragraf sekcji drugiej.</p>
+        <p>To jest czwarty paragraf sekcji drugiej.</p>
+        <p>To jest piąty paragraf sekcji drugiej.</p>
+      </section>
+
+      <section>
+        <h3>Sekcja trzecia</h3>
+        <p>To jest pierwszy paragraf sekcji trzeciej.</p>
+        <p>To jest drugi paragraf sekcji trzeciej.</p>
+        <p>To jest trzeci paragraf sekcji trzeciej.</p>
+        <p>To jest czwarty paragraf sekcji trzeciej.</p>
+        <p>To jest piąty paragraf sekcji trzeciej.</p>
+      </section>
+    </article>
+  </main>
+
+  <!-- Blok stopki -->
+  <footer>
+    <p>Stronę wykonał: <i>Twoje Imię i Nazwisko</i></p>
+  </footer>
+</body>
+</html>
