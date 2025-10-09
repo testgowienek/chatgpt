@@ -1,0 +1,59 @@
+Treść witryny:
+Składa się ze stron o nazwie glowna.html, kantor.html i galeria.html
+Każda z nich:
+‒ Zapisana w języku HTML5
+‒ Zadeklarowany polski język zawartości witryny
+‒ Jawnie zastosowany właściwy standard kodowania polskich znaków
+‒ Tytuł strony widoczny na karcie przeglądarki odpowiadający nazwie pliku – pisany dużymi
+literami.
+Podział strony na bloki zrealizowany TYLKO za pomocą semantycznych znaczników bloków
+języka HTML5, wspólny dla wszystkich stron (taki sam na każdej ze stron) :
+• Blok nagłówkowy: nagłówek pierwszego stopnia o treści: “Podstawowe znaczniki HTML”
+• Blok stopki: paragraf o treści: “Stronę wykonał: “ dalej imię i nazwisko autora pisane
+kursywą
+Strona glowna.html:
+W bloku main:
+• blok nawigacyjny zawierający:
+• lista numerowana, z zastosowaniem wielkich cyfr rzymskich zawierająca następujące
+podpunkty:
+• KANTOR – hiperłącze do podstrony kantor.html
+• Narodowy Bank Polski – hiperłącze do strony Narodowego Banku Polskiego
+• GALERIA – dodatkowo obok napisu obrazek wielkości 50x50 px przedstawiający ikonę
+obrazka – zdjęcie to hiperłącze do strony galeria.html
+• poziomą linię oddzielającą
+• blok artykułu zawierający 4 sekcje, każda wypełniona 3 paragrafami tekstu Lorem Ipsum –
+z generatora. Każda sekcja zaczyna się znacznikiem <h2> : „Sekcja 1”, „Sekcja 2” itd.
+• poniżej dodatkowa sekcja z nienumerowaną listą: spisem treści sekcji artykułu – kliknięcie
+w dany podpunkt przenosi do danej sekcji
+Strona kantor.html:
+W bloku main:
+Znacznik artykułu z zawartością:
+• sekcja zawierająca tekst – definicję kantoru umieszczoną jako podpunkt listy definicji.
+Należy dodać hiperłącze o treści „Źródło” prowadzące do miejsca, z którego kopiowaliśmy
+definicję.
+• Kolejna sekcja: Tabela z następującymi danymi:
+Kraj | Waluta | Kurs w zł | Symbol
+• Tabelę należy wypełnić 10 różnymi sensownymi i odpowiadającymi rzeczywistości danymi,
+w tym: USA, Kanada, Australia. Jeśli jakieś dane się powtarzają – waluta, kurs – należy
+zastosować łączenie wierszy. Symbole należy wypisać za pomocą kodów znaków
+specjalnych
+• Do tabeli zastosować stylowanie: obramowanie wielkości 0,5px, linią ciągłą, w kolorze
+niebieskim.
+• Każda nazwa kraju ma być linkiem do strony na Wikipedii o danym kraju.
+• Poniżej odnośnik o treści POWRÓT przekierowujący do strony glowna.html
+Strona galeria.html:
+W bloku main:
+Blok artykułu:
+• sekcja z listą numerowaną małymi literami alfabetu, zaczynająca się od „c”. Z zawartością
+10 zwierzątek.
+• Sekcja z 10 zdjęciami zwierzątek odpowiadającymi nazwom z listy numerowanej
+• Każdy podpunkt listy jest hiperłączem prowadzącym do konkretnego zdjęcia – wskazówka
+– zdjęciom też możemy nadać id! Każde ze zdjęć ma tekst alternatywny!
+• Dodaj jeszcze jeden podpunkt do listy o nazwie niespodzianka, który powoduje
+bezpośrednie otworzenie jakiegoś obrazka
+• Kolejna sekcja:
+• Tabela: Nazwa | Rodzaj z zawartością wszystkich 10 gatunków i odpowiadających im
+gromad (ssak, ryba, gad, płaz etc.) jeśli, któraś gromada się powtarza – zastosuj łączenie
+wierszy! Nie możesz wpisać żadnej gromady więcej niż raz, bez wykorzystania łączenia
+wierszy.
+• Na samym dole strony odnośnik „POWRÓT” przekierowujący do strony glowna.html 
