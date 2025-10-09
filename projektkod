@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>GLOWNA</title>
+</head>
+<body>
+    <header>
+        <h1>Podstawowe znaczniki HTML</h1>
+    </header>
+
+    <main>
+        <nav>
+            <ol type="I">
+                <li><a href="kantor.html">KANTOR</a></li>
+                <li><a href="https://www.nbp.pl" target="_blank">Narodowy Bank Polski</a></li>
+                <li>
+                    <a href="galeria.html">
+                        GALERIA
+                        <img src="obrazek.png" alt="Ikona obrazka" width="50" height="50">
+                    </a>
+                </li>
+            </ol>
+        </nav>
+
+        <hr>
+
+        <article>
+            <section id="sekcja1">
+                <h2>Sekcja 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                <p>Cras venenatis euismod malesuada.</p>
+            </section>
+
+            <section id="sekcja2">
+                <h2>Sekcja 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                <p>Cras venenatis euismod malesuada.</p>
+            </section>
+
+            <section id="sekcja3">
+                <h2>Sekcja 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                <p>Cras venenatis euismod malesuada.</p>
+            </section>
+
+            <section id="sekcja4">
+                <h2>Sekcja 4</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                <p>Cras venenatis euismod malesuada.</p>
+            </section>
+
+            <section>
+                <h2>Spis treści</h2>
+                <ul>
+                    <li><a href="#sekcja1">Sekcja 1</a></li>
+                    <li><a href="#sekcja2">Sekcja 2</a></li>
+                    <li><a href="#sekcja3">Sekcja 3</a></li>
+                    <li><a href="#sekcja4">Sekcja 4</a></li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>Stronę wykonał: <i>Jan Kowalski</i></p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>KANTOR</title>
+</head>
+<body>
+    <header>
+        <h1>Podstawowe znaczniki HTML</h1>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <dl>
+                    <dt>Kantor</dt>
+                    <dd>
+                        Miejsce, w którym dokonuje się wymiany walut obcych.
+                        <a href="https://pl.wikipedia.org/wiki/Kantor_(finanse)" target="_blank">Źródło</a>
+                    </dd>
+                </dl>
+            </section>
+
+            <section>
+                <table border="1">
+                    <tr>
+                        <th>Kraj</th>
+                        <th>Waluta</th>
+                        <th>Kurs w zł</th>
+                        <th>Symbol</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://pl.wikipedia.org/wiki/Stany_Zjednoczone" target="_blank">USA</a></td>
+                        <td rowspan="2">Dolar</td>
+                        <td rowspan="2">4.00</td>
+                        <td>&#36;</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://pl.wikipedia.org/wiki/Kanada" target="_blank">Kanada</a></td>
+                        <td>&#36;</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://pl.wikipedia.org/wiki/Australia" target="_blank">Australia</a></td>
+                        <td>Dolar australijski</td>
+                        <td>2.70</td>
+                        <td>A&#36;</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://pl.wikipedia.org/wiki/Wielka_Brytania" target="_blank">Wielka Brytania</a></td>
+                        <td>Funt</td>
+                        <td>5.20</td>
+                        <td>&#163;</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://pl.wikipedia.org/wiki/Strefa_euro" target="_blank">Strefa Euro</a></td>
+                        <td>Euro</td>
+                        <td>4.30</td>
+                        <td>&#8364;</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://pl.wikipedia.org/wiki/Japonia" target="_blank">Japonia</a></td>
+                        <td>Jen</td>
+                        <td>0.028</td>
+                        <td>&#165;</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://pl.wikipedia.org/wiki/Szwajcaria" target="_blank">Szwajcaria</a></td>
+                        <td>Frank</td>
+                        <td>4.70</td>
+                        <td>Fr</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://pl.wikipedia.org/wiki/Norwegia" target="_blank">Norwegia</a></td>
+                        <td>Korona</td>
+                        <td>0.40</td>
+                        <td>kr</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://pl.wikipedia.org/wiki/Szwecja" target="_blank">Szwecja</a></td>
+                        <td rowspan="2">Korona</td>
+                        <td rowspan="2">0.39</td>
+                        <td>kr</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://pl.wikipedia.org/wiki/Dania" target="_blank">Dania</a></td>
+                        <td>kr</td>
+                    </tr>
+                </table>
+            </section>
+
+            <p><a href="glowna.html">POWRÓT</a></p>
+        </article>
+    </main>
+
+    <footer>
+        <p>Stronę wykonał: <i>Jan Kowalski</i></p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>GALERIA</title>
+</head>
+<body>
+    <header>
+        <h1>Podstawowe znaczniki HTML</h1>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <ol type="a" start="3">
+                    <li><a href="#pies">Pies</a></li>
+                    <li><a href="#kot">Kot</a></li>
+                    <li><a href="#lew">Lew</a></li>
+                    <li><a href="#tygrys">Tygrys</a></li>
+                    <li><a href="#słoń">Słoń</a></li>
+                    <li><a href="#żaba">Żaba</a></li>
+                    <li><a href="#rekin">Rekin</a></li>
+                    <li><a href="#papuga">Papuga</a></li>
+                    <li><a href="#żółw">Żółw</a></li>
+                    <li><a href="#kon">Koń</a></li>
+                    <li><a href="niespodzianka.jpg" target="_blank">Niespodzianka</a></li>
+                </ol>
+            </section>
+
+            <section>
+                <img id="pies" src="pies.jpg" alt="Pies" width="150" height="150">
+                <img id="kot" src="kot.jpg" alt="Kot" width="150" height="150">
+                <img id="lew" src="lew.jpg" alt="Lew" width="150" height="150">
+                <img id="tygrys" src="tygrys.jpg" alt="Tygrys" width="150" height="150">
+                <img id="słoń" src="slon.jpg" alt="Słoń" width="150" height="150">
+                <img id="żaba" src="zaba.jpg" alt="Żaba" width="150" height="150">
+                <img id="rekin" src="rekin.jpg" alt="Rekin" width="150" height="150">
+                <img id="papuga" src="papuga.jpg" alt="Papuga" width="150" height="150">
+                <img id="żółw" src="zolw.jpg" alt="Żółw" width="150" height="150">
+                <img id="kon" src="kon.jpg" alt="Koń" width="150" height="150">
+            </section>
+
+            <section>
+                <table border="1">
+                    <tr>
+                        <th>Nazwa</th>
+                        <th>Rodzaj</th>
+                    </tr>
+                    <tr>
+                        <td>Pies</td>
+                        <td rowspan="3">Ssak</td>
+                    </tr>
+                    <tr><td>Kot</td></tr>
+                    <tr><td>Lew</td></tr>
+                    <tr>
+                        <td>Tygrys</td>
+                        <td rowspan="2">Ssak</td>
+                    </tr>
+                    <tr><td>Koń</td></tr>
+                    <tr>
+                        <td>Żaba</td>
+                        <td>Płaz</td>
+                    </tr>
+                    <tr>
+                        <td>Rekin</td>
+                        <td>Ryba</td>
+                    </tr>
+                    <tr>
+                        <td>Papuga</td>
+                        <td>Ptak</td>
+                    </tr>
+                    <tr>
+                        <td>Żółw</td>
+                        <td>Gad</td>
+                    </tr>
+                    <tr>
+                        <td>Słoń</td>
+                        <td>Ssak</td>
+                    </tr>
+                </table>
+            </section>
+
+            <p><a href="glowna.html">POWRÓT</a></p>
+        </article>
+    </main>
+
+    <footer>
+        <p>Stronę wykonał: <i>Jan Kowalski</i></p>
+    </footer>
+</body>
+</html>
