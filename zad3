@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 3 - Formularz zamówienia biletów</title>
+</head>
+<body>
+
+<h2>Zadanie 3</h2>
+<p>Utwórz formularz zamówienia biletów na szkolny koncert.<br>
+Formularz ma zawierać:</p>
+<ul>
+  <li>pole tekstowe z imieniem i nazwiskiem</li>
+  <li>pole liczby biletów z zakresem od 1 do 10 i krokiem 1</li>
+  <li>wybór typu biletu – normalny lub ulgowy</li>
+  <li>możliwość zaznaczenia dodatkowych opcji, np. miejsce VIP, program pamiątkowy</li>
+  <li>przycisk (np. „Oblicz kwotę”) oraz „Zamów bilety”</li>
+</ul>
+
+<form>
+  Imię i nazwisko: <input type="text" name="imie_nazwisko" required><br><br>
+
+  Liczba biletów (1–10): <input type="number" name="liczba_biletow" min="1" max="10" step="1" value="1"><br><br>
+
+  Rodzaj biletu:<br>
+  <input type="radio" name="rodzaj" value="normalny" checked> Normalny<br>
+  <input type="radio" name="rodzaj" value="ulgowy"> Ulgowy<br><br>
+
+  Dodatkowe opcje:<br>
+  <input type="checkbox" name="vip"> Miejsce VIP<br>
+  <input type="checkbox" name="program"> Program pamiątkowy<br><br>
+
+  Data wydarzenia: <input type="date" name="data"><br><br>
+
+  <input type="button" value="Oblicz kwotę">
+  <input type="submit" value="Zamów bilety">
+</form>
+
+</body>
+</html>
