@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Wybór języka — optgroup przykładowo</title>
+</head>
+<body>
+
+  <!-- Nagłówek / instrukcja -->
+  <h1>Wybierz na jaki język chcesz się zapisać:</h1>
+
+  <!-- Etykieta powiązana z select (dla dostępności) -->
+  <label for="language-select">Język:</label>
+  <select id="language-select" name="language">
+    <optgroup label="Języki słowiańskie">
+      <option value="pl">Język polski</option>
+      <option value="ru">Język rosyjski</option>
+      <option value="uk">Język ukraiński</option>
+    </optgroup>
+
+    <optgroup label="Języki germańskie">
+      <option value="en">Język angielski</option>
+      <option value="de" selected>Język niemiecki</option>
+    </optgroup>
+
+    <optgroup label="Języki romańskie">
+      <option value="fr">Język francuski</option>
+      <option value="it">Język włoski</option>
+    </optgroup>
+  </select>
+
+  <hr>
+
+  <!-- Duża widoczna lista, żeby przypominała panel z prawej strony na zdjęciu -->
+  <label for="language-list">Lista języków (podgląd):</label>
+  <select id="language-list" name="language-list" size="9" aria-label="Lista języków">
+    <optgroup label="Języki słowiańskie">
+      <option value="pl">Język polski</option>
+      <option value="ru">Język rosyjski</option>
+      <option value="uk">Język ukraiński</option>
+    </optgroup>
+
+    <optgroup label="Języki germańskie">
+      <option value="en">Język angielski</option>
+      <option value="de" selected>Język niemiecki</option>
+    </optgroup>
+
+    <optgroup label="Języki romańskie">
+      <option value="fr">Język francuski</option>
+      <option value="it">Język włoski</option>
+    </optgroup>
+  </select>
+
+</body>
+</html>
