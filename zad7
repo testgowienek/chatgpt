@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 7</title>
+</head>
+<body>
+  <h1>Zadanie 7</h1>
+  <p>Odtwórz następujący formularz. Zastosuj etykiety!</p>
+
+  <form>
+    <fieldset>
+      <legend>Zajęcia dodatkowe</legend>
+
+      <label for="zajecia">Wybierz zajęcia:</label><br>
+      <select id="zajecia" name="zajecia" multiple size="4">
+        <option>Programowanie</option>
+        <option>Grafika komputerowa</option>
+        <option>Sieci komputerowe</option>
+        <option>Matematyka rozszerzona</option>
+      </select><br><br>
+
+      <input type="submit" value="Zapisz się">
+    </fieldset>
+  </form>
+</body>
+</html>
