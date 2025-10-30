@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 5</title>
+</head>
+<body>
+  <form action="https://example.com" method="post">
+    <label for="name">Imię:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <!-- 1. Przycisk przesyłający formularz -->
+    <input type="submit" value="Wyślij dane">
+
+    <!-- 2. Przycisk czyszczący formularz (z ikoną kosza) -->
+    <button type="reset">
+      <img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" alt="Wyczyść" width="20">
+    </button>
+
+    <!-- 3. Przycisk z obrazkiem kotka prowadzący do strony schroniska -->
+    <button type="button" onclick="window.location.href='https://schronisko.jgora.pl/'">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Kotek" width="30">
+    </button>
+  </form>
+</body>
+</html>
