@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Zadanie 8 — Formularz</title>
+</head>
+<body>
+
+  <h1>Zadanie 8</h1>
+  <p>Odtwórz następujący formularz. Zastosuj etykiety!</p>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Wybór sprzętu do projektu</legend>
+
+      <p>
+        <label for="fullname">Imię i nazwisko:</label>
+        <input type="text" id="fullname" name="fullname">
+      </p>
+
+      <p>
+        <label for="computer">Komputer główny:</label>
+        <select id="computer" name="computer">
+          <option>PC z procesorem Intel</option>
+          <option>PC z procesorem AMD</option>
+          <option>Laptop Lenovo</option>
+          <option>Laptop Dell</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="accessories">Akcesoria (możesz wybrać kilka):</label><br>
+        <select id="accessories" name="accessories" multiple size="4">
+          <option>Mysz</option>
+          <option>Klawiatura</option>
+          <option>Słuchawki</option>
+          <option>Kamera internetowa</option>
+        </select>
+      </p>
+
+      <p>
+        <input type="submit" value="Podgląd sprzętu">
+        <input type="submit" value="Zatwierdź wybór">
+      </p>
+
+    </fieldset>
+  </form>
+
+</body>
+</html>
