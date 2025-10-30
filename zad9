@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Zadanie 9 — Formularz zgłoszeniowy</title>
+</head>
+<body>
+
+  <h1>Zadanie 9</h1>
+  <p>Odtwórz następujący formularz. Zastosuj etykiety!</p>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Formularz zgłoszeniowy</legend>
+
+      <p>
+        <label for="fullname">Imię i nazwisko:</label>
+        <input type="text" id="fullname" name="fullname" value="Jan Kowalski">
+      </p>
+
+      <p>
+        <label for="birthdate">Data urodzenia:</label>
+        <input type="date" id="birthdate" name="birthdate" placeholder="dd.mm.rrrr">
+      </p>
+
+      <p>
+        <label for="course">Kierunek:</label>
+        <select id="course" name="course">
+          <option>-- wybierz kierunek --</option>
+          <option>Technik informatyk</option>
+          <option>Technik mechatronik</option>
+          <option>Technik grafik</option>
+        </select>
+      </p>
+
+      <fieldset>
+        <legend>Płeć:</legend>
+        <p>
+          <input type="radio" id="male" name="gender" value="mężczyzna">
+          <label for="male">Mężczyzna</label><br>
+
+          <input type="radio" id="female" name="gender" value="kobieta">
+          <label for="female">Kobieta</label><br>
+
+          <input type="radio" id="other" name="gender" value="inna">
+          <label for="other">Inna</label>
+        </p>
+      </fieldset>
+
+      <p>
+        <input type="submit" value="Zatwierdź">
+      </p>
+
+    </fieldset>
+  </form>
+
+</body>
+</html>
