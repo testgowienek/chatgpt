@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 12</title>
+</head>
+<body>
+
+  <h1>Zadanie 12</h1>
+  <p>Odtwórz następujący formularz. Zastosuj etykiety!</p>
+
+  <fieldset>
+    <legend>Opinia o zajęciach</legend>
+
+    <form>
+      <label for="school">Nazwa szkoły:</label>
+      <input type="text" id="school" name="school" value="Zespół Szkół Technicznych"><br><br>
+
+      <label for="name">Imię:</label>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="opinion">Twoja opinia:</label><br>
+      <textarea id="opinion" name="opinion" rows="5" cols="40"
+        placeholder="Napisz, co sądzisz o dzisiejszej lekcji..."></textarea><br><br>
+
+      <button type="submit" accesskey="w">Wyślij (Alt + W)</button>
+      <button type="reset" accesskey="c">Wyczyść (Alt + C)</button>
+    </form>
+  </fieldset>
+
+</body>
+</html>
