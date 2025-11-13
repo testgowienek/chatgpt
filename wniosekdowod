@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wniosek o wydanie dowodu osobistego</title>
+</head>
+<body>
+
+<h2 style="text-align:center;">Wniosek o wydanie dowodu osobistego</h2>
+
+<p><b>Instrukcja wypełniania w 3 krokach:</b></p>
+<ol>
+    <li>WYPEŁNIAJ WIELKIMI LITERAMI</li>
+    <li>Pola wyboru zaznaczaj <input type="checkbox" checked> lub <input type="radio" checked></li>
+    <li>Wypełniaj kolorem czarnym lub niebieskim</li>
+</ol>
+
+<form>
+
+<table border="1" cellspacing="0" cellpadding="5" width="100%">
+    <tr>
+        <th colspan="2" align="left">1. Dane osoby, która ma otrzymać dowód</th>
+    </tr>
+
+    <tr>
+        <td>Numer PESEL</td>
+        <td><input type="text" name="pesel" size="20"></td>
+    </tr>
+    <tr>
+        <td>Imię (imiona)</td>
+        <td><input type="text" name="imie" size="50"></td>
+    </tr>
+    <tr>
+        <td>Nazwisko</td>
+        <td><input type="text" name="nazwisko" size="50"></td>
+    </tr>
+    <tr>
+        <td>Nazwisko rodowe</td>
+        <td><input type="text" name="nazwisko_rodowe" size="50"></td>
+    </tr>
+    <tr>
+        <td>Data urodzenia</td>
+        <td><input type="date" name="data_urodzenia"></td>
+    </tr>
+    <tr>
+        <td>Miejsce urodzenia</td>
+        <td><input type="text" name="miejsce_urodzenia" size="50"></td>
+    </tr>
+    <tr>
+        <td>Obywatelstwo</td>
+        <td>
+            <input type="radio" name="obywatelstwo" value="polskie"> polskie
+            <input type="radio" name="obywatelstwo" value="inne"> inne
+        </td>
+    </tr>
+    <tr>
+        <td>Płeć</td>
+        <td>
+            <input type="radio" name="plec" value="kobieta"> kobieta
+            <input type="radio" name="plec" value="mezczyzna"> mężczyzna
+        </td>
+    </tr>
+
+    <tr>
+        <th colspan="2" align="left">Dane rodziców</th>
+    </tr>
+    <tr>
+        <td>Imię ojca (pierwsze)</td>
+        <td><input type="text" name="imie_ojca" size="50"></td>
+    </tr>
+    <tr>
+        <td>Imię matki (pierwsze)</td>
+        <td><input type="text" name="imie_matki" size="50"></td>
+    </tr>
+    <tr>
+        <td>Nazwisko rodowe matki</td>
+        <td><input type="text" name="nazwisko_matki" size="50"></td>
+    </tr>
+</table>
+
+<br>
+
+<table border="1" cellspacing="0" cellpadding="5" width="100%">
+    <tr>
+        <th colspan="2" align="left">2. Dane kontaktowe wnioskodawcy</th>
+    </tr>
+
+    <tr>
+        <td>Ulica</td>
+        <td><input type="text" name="ulica" size="50"></td>
+    </tr>
+    <tr>
+        <td>Numer domu</td>
+        <td><input type="text" name="numer_domu" size="10"></td>
+    </tr>
+    <tr>
+        <td>Numer lokalu</td>
+        <td><input type="text" name="numer_lokalu" size="10"></td>
+    </tr>
+    <tr>
+        <td>Kod pocztowy</td>
+        <td><input type="text" name="kod_pocztowy" size="10"> Miejscowość: <input type="text" name="miejscowosc" size="30"></td>
+    </tr>
+    <tr>
+        <td>Numer telefonu</td>
+        <td><input type="text" name="telefon" size="20"> 
+            <br><small>(Numer nie jest obowiązkowy, ale ułatwi kontakt w sprawie dowodu.)</small>
+        </td>
+    </tr>
+    <tr>
+        <td>Adres poczty elektronicznej</td>
+        <td><input type="email" name="email" size="40"> 
+            <br><small>(Adres poczty elektronicznej nie jest obowiązkowy, ale ułatwi kontakt w sprawie dowodu.)</small>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <p><b>Wyrażam zgodę na przekazanie do rejestru danych kontaktowych</b> imienia, nazwiska, numeru PESEL oraz:</p>
+            <input type="checkbox" name="zgoda_tel"> numeru telefonu komórkowego<br>
+            <input type="checkbox" name="zgoda_email"> adresu poczty elektronicznej<br>
+            <small>Zgodę możesz wyrazić jedynie wtedy, gdy składasz wniosek osobiście.</small>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<input type="submit" value="Wyślij wniosek">
+<input type="reset" value="Wyczyść formularz">
+
+</form>
+
+</body>
+</html>
