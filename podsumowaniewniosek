@@ -1,0 +1,16 @@
+Jasne 👍 — oto krótka, gotowa wersja dwóch sekcji, które możesz wkleić do dokumentacji:
+
+
+---
+
+Opis różnic i napotkanych trudności
+
+Mój formularz różni się od oryginału głównie wyglądem, ponieważ projekt należało wykonać bez użycia CSS. Układ tabel nie jest idealnie taki sam jak w druku, ale zachowuje wszystkie pola i funkcje. Niektóre elementy, takie jak logo, pieczęcie czy oznaczenia urzędowe, zostały pominięte. Największą trudność sprawiło odpowiednie rozmieszczenie pól tekstowych w tabelach oraz dopasowanie opisów do pól, aby całość wyglądała przejrzyście.
+
+
+---
+
+Krótkie podsumowanie pracy
+
+Podczas tworzenia formularza nauczyłem się poprawnie używać znaczników HTML5 do budowy dokumentów urzędowych. Poznałem zastosowanie tabel w układzie formularza oraz różnych typów pól, takich jak radio, checkbox i email. Projekt był dobrym ćwiczeniem w dokładności i cierpliwości przy odwzorowywaniu oryginalnego dokumentu.
+
