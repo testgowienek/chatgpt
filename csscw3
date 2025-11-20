@@ -1,0 +1,29 @@
+* {
+    color: black !important;
+    font-size: 10px !important;
+}
+
+h1 {
+    color: green !important;
+    font-size: 50px !important;
+}
+
+ol {
+    color: red !important;
+    font-size: 14px !important;
+}
+
+ul {
+    color: blue !important;
+    font-size: 16px !important;
+}
+
+.lista2-ol {
+    color: purple !important;
+    font-size: 18px !important;
+}
+
+.lista2-ul {
+    color: orange !important;
+    font-size: 20px !important;
+}
