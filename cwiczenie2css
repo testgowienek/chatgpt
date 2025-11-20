@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Ćwiczenie</title>
+
+    <style>
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+
+        a {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+
+<article>
+    <h1>Moja strona szkolna</h1>
+
+    <p>
+        Oto link do strony szkoły:
+        <a href="https://www.twojaszkola.pl">Strona szkoły</a>.
+    </p>
+</article>
+
+</body>
+</html>
