@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Ćwiczenie</title>
+    <style>
+        p {
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<article>
+    <h1>To jest nagłówek H1</h1>
+
+    <p style="color: red;">Pierwszy paragraf tekstu.</p>
+    <p style="color: green;">Drugi paragraf tekstu.</p>
+    <p style="color: blue;">Trzeci paragraf tekstu.</p>
+
+</article>
+
+</body>
+</html>
