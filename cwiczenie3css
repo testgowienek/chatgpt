@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Ćwiczenie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article>
+
+    <h1>Moja strona</h1>
+
+    <section>
+        <p>To jest pierwszy paragraf w pierwszej sekcji.</p>
+
+        <ol>
+            <li>Pierwszy element listy uporządkowanej</li>
+            <li>Drugi element</li>
+        </ol>
+
+        <ul>
+            <li>Pierwszy element listy nieuporządkowanej</li>
+            <li>Drugi element</li>
+        </ul>
+    </section>
+
+    <section>
+        <p>To jest drugi paragraf w drugiej sekcji.</p>
+
+        <ol class="lista2-ol">
+            <li>Pierwszy element</li>
+            <li>Drugi element</li>
+        </ol>
+
+        <ul class="lista2-ul">
+            <li>Pierwszy element</li>
+            <li>Drugi element</li>
+        </ul>
+    </section>
+
+</article>
+
+</body>
+</html>
+
+
+
+  /* globalne stylowanie wszystkich elementów */
+* {
+    color: black;
+    font-size: 10px;
+}
+
+/* stylowanie nagłówka h1 */
+h1 {
+    color: green;
+    font-size: 50px;
+}
+
+/* pierwsze listy */
+ol {
+    color: red;
+    font-size: 14px;
+}
+
+ul {
+    color: blue;
+    font-size: 16px;
+}
+
+/* drugie listy – inne kolory i rozmiary */
+.lista2-ol {
+    color: purple;
+    font-size: 18px;
+}
+
+.lista2-ul {
+    color: orange;
+    font-size: 20px;
+}
