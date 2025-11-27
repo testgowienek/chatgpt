@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Centrum Nauki Orion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="orion-box">
+    
+    <h2 class="orion-header">Centrum Nauki Orion</h2>
+
+    <p class="orion-desc">
+        Nasze centrum oferuje 
+        <span class="span1">interaktywne wystawy</span>
+        oraz prezentacje prowadzone przez ekspertów. 
+        Jest to miejsce pełne 
+        <span class="span2">inspiracji</span>
+        i nauki. Każdy odwiedzający może 
+        <span class="span3">uczestniczyć</span>
+        w wyjątkowych pokazach.
+    </p>
+
+    <ul class="orion-list">
+        <li>Strefa Kosmiczna</li>
+        <li>Laboratorium Chemiczne</li>
+        <li>Pokazy robotów</li>
+    </ul>
+
+    <a class="orion-link" href="#">Dowiedz się więcej</a>
+
+</section>
+
+</body>
+</html>
+
+
+
+
+  .orion-box {
+    border: 2px solid #00008b;
+    padding: 20px;
+    width: 450px;
+    font-family: Arial, sans-serif;
+}
+
+.orion-header {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.orion-desc span {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.span1 {
+    color: darkred;
+}
+
+.span2 {
+    color: darkgreen;
+}
+
+.span3 {
+    color: purple;
+}
+
+.orion-list {
+    font-family: Georgia, serif;
+    font-size: 18px;
+}
+
+.orion-link {
+    color: #00008b;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
