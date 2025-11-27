@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Planet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="naglowek">Coffee Planet – najlepsza kawa w mieście!</h1>
+
+<p>Każdego dnia serwujemy świeżo mielone ziarna z całego świata.</p>
+
+<p>
+    Nasza oferta obejmuje 
+    <span class="espresso">espresso</span>, 
+    <span class="latte">latte</span>, 
+    oraz cappuccino.
+</p>
+
+<p class="ostatnia">PROMOCJA DNIA: KAWA + CIASTO</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+/* Nagłówek */
+.naglowek {
+    font-family: Georgia, serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Nazwy kaw */
+.espresso {
+    font-weight: bold;
+}
+
+.latte {
+    font-style: italic;
+}
+
+/* Ostatnia linijka */
+.ostatnia {
+    font-variant: small-caps;
+    color: #664400;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
