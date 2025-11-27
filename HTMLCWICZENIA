@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Warsztat samochodowy "U Karola"</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Warsztat samochodowy "U Karola"</h1>
+    <p>Warsztat samochodowy „U Karola” to miejsce, w którym od ponad 10 lat dbamy o bezpieczeństwo i komfort kierowców. Łączymy doświadczenie z nowoczesną diagnostyką, a każdą naprawę wykonujemy rzetelnie i terminowo. Nasi mechanicy to pasjonaci motoryzacji, którzy traktują każdy samochód jak własny. Jeśli szukasz uczciwego serwisu, jasnych zasad i solidnej obsługi — zapraszamy! Twój samochód będzie w dobrych rękach.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h3>Krótki opis warsztatu</h3>
+      <article>
+        <p>Warsztat "U Karola" to kameralny serwis samochodowy specjalizujący się w naprawach mechanicznych, wymianie eksploatacyjnych części oraz przeglądach technicznych. Zespół składa się z doświadczonych mechaników, którzy dbają o rzetelność i terminowość usług. Warsztat współpracuje z dostawcami części zamiennych i oferuje gwarancję na wykonane naprawy. Naszym priorytetem jest bezpieczeństwo pojazdów oraz zadowolenie klienta.</p>
+      </article>
+    </section>
+
+    <section>
+      <h3>Jak wymienić olej w samochodzie</h3>
+      <article>
+        <p>Wymiana oleju silnikowego jest podstawową czynnością eksploatacyjną, która wpływa na żywotność silnika. Poniższy opis opiera się na ogólnych zaleceniach producentów pojazdów i poradach serwisowych — przed wykonaniem czynności należy zapoznać się z instrukcją obsługi konkretnego modelu.</p>
+
+        <h4>Przygotowanie</h4>
+        <p>1. Zabezpiecz samochód: zaparkuj na równej powierzchni, zaciągnij hamulec ręczny i ustaw kliny pod koła. Wyłącz silnik i pozwól mu ostygnąć jeśli był gorący (rozgrzany olej może powodować oparzenia). Wiele warsztatów lekko rozgrzewa silnik przed spuszczeniem oleju, aby olej lepiej spływał — robi się to ostrożnie.</p>
+
+        <h4>Narzędzia i materiały</h4>
+        <p>2. Przygotuj klucze do korka spustowego, pojemnik na zużyty olej, nowy filtr oleju, nowy olej o specyfikacji zalecanej przez producenta, lejek i rękawice. Upewnij się, że masz odpowiedni moment dokręcania korka i filtra (jeśli jest podany).</p>
+
+        <h4>Kroki wymiany oleju</h4>
+        <p>3. Podnieś samochód (jeśli potrzebne) przy użyciu lewarka i zabezpiecz na podporach. Umieść pojemnik pod miską olejową. Odkręć korek spustowy miski olejowej i pozwól olejowi całkowicie spłynąć. Uważaj na gorący olej.</p>
+        <p>4. Wyjmij stary filtr oleju (może również spłynąć olej) i nasmaruj uszczelkę nowego filtra olejem, następnie zamontuj nowy filtr zgodnie z instrukcją (zwykle dokręcić ręką + określony ułamek obrotu). Po wymianie filtra załóż korek spustowy i dokręć go momentem zalecanym przez producenta.</p>
+        <p>5. Uzupełnij ilość oleju zgodnie z zaleceniami producenta (najlepiej przez lejek), sprawdź poziom bagnetem lub wskaźnikiem po kilkunastu sekundach pracy silnika i ewentualnie dolej. Sprawdź szczelność i brak wycieków.</p>
+
+        <h4>Utylizacja i bezpieczeństwo</h4>
+        <p>6. Zużyty olej i filtry oddaj do punktu zbiórki odpadów niebezpiecznych lub autoryzowanego punktu serwisowego. Nigdy nie wylewaj oleju do kanalizacji ani na ziemię. Zadbaj o środki ochrony osobistej i zachowaj procedury BHP.</p>
+
+        <p><strong>Uwaga:</strong> powyższa procedura jest ogólnym opisem — zawsze stosuj się do instrukcji producenta pojazdu i przepisów lokalnych. Jeśli nie masz pewności co do wykonania, zleć czynność wyspecjalizowanemu serwisowi.</p>
+      </article>
+    </section>
+
+    <section>
+      <h3>Cennik usług</h3>
+      <article>
+        <p>Poniższa tabela przedstawia przykładowe ceny podstawowych usług wykonywanych w warsztacie. Ceny mogą się różnić w zależności od marki pojazdu i stopnia skomplikowania prac.</p>
+
+        <table>
+          <caption><strong>Cennik usług warsztatu "U Karola"</strong></caption>
+          <tr>
+            <th>Lp.</th>
+            <th>Usługa</th>
+            <th>Zakres</th>
+            <th>Cena (netto)</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Wymiana oleju i filtra</td>
+            <td>Wymiana oleju silnikowego + filtr</td>
+            <td>120 zł</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Diagnostyka komputerowa</td>
+            <td>Odczyt i kasowanie błędów</td>
+            <td>80 zł</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Wymiana klocków hamulcowych</td>
+            <td>Przód lub tył (bez części)</td>
+            <td>150 zł</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Geometria zawieszenia</td>
+            <td>Regulacja kątów na stanowisku</td>
+            <td>120 zł</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Wymiana rozrządu (robocizna)</td>
+            <td>Demontaż / montaż paska/łańcucha</td>
+            <td>400 zł</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Serwis klimatyzacji</td>
+            <td>Odgrzybianie / doładowanie czynnika</td>
+            <td>180 zł</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+
+    <section>
+      <h3>Nasi mechanicy</h3>
+      <article>
+        <p>Poznaj zespół mechaników, którzy pracują w warsztacie:</p>
+        <ul>
+          <li>Jan Kowalski – mechanik główny, specjalista od silników spalinowych</li>
+          <li>Anna Nowak – diagnostyk, elektronika samochodowa</li>
+          <li>Marek Wiśniewski – zawieszenia i układy hamulcowe</li>
+          <li>Katarzyna Zielińska – serwis klimatyzacji i blacharstwo</li>
+        </ul>
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+    <h3>Dane kontaktowe</h3>
+    <p>Warsztat samochodowy "U Karola"</p>
+    <p>ul. Mechaników 10, 00-100 Miasto</p>
+    <p>Telefon: 123 456 789</p>
+    <p>Email: kontakt@ukarola.example</p>
+    <p>Godziny otwarcia: pn–pt 8:00–18:00, sob 9:00–14:00</p>
+  </footer>
+
+</body>
+</html>
