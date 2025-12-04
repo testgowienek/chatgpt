@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Cennik kursów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="cennik">
+
+    <!-- 1. Nagłówek h2 w kursywie -->
+    <h2><i>Cennik kursów komputerowych</i></h2>
+
+    <!-- 2. Paragraf w serif z 2 wyróżnieniami -->
+    <p class="opis">
+        Oferujemy szkolenia z zakresu <strong>programowania</strong> oraz 
+        <em>grafiki komputerowej</em>.
+    </p>
+
+    <!-- 3. Tabela: 3 kolumny / 4 wiersze -->
+    <table>
+        <tr>
+            <th>Kurs</th>
+            <th>Czas trwania</th>
+            <th>Cena</th>
+        </tr>
+        <tr>
+            <td>HTML + CSS</td>
+            <td>20 godzin</td>
+            <td>350 zł</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>25 godzin</td>
+            <td>450 zł</td>
+        </tr>
+        <tr>
+            <td>Grafika 2D</td>
+            <td>15 godzin</td>
+            <td>300 zł</td>
+        </tr>
+    </table>
+
+    <!-- 4. Link w small-caps -->
+    <a href="#" class="link">Pełna oferta</a>
+
+</section>
+
+</body>
+</html>
+
+
+
+
+
+/* 5. Cała sekcja: ramka 1px kreskowana */
+.cennik {
+    border: 1px dashed black;
+    padding: 20px;
+    width: 500px;
+    margin: 40px auto;
+}
+
+/* 2. Paragraf w kroju serif */
+.opis {
+    font-family: "Times New Roman", serif;
+}
+
+/* 3. Nagłówki tabeli pogrubione */
+th {
+    font-weight: bold;
+}
+
+/* 3. Komórki z obramowaniem 1px, różowym */
+table, th, td {
+    border: 1px solid pink;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+/* 4. Link w small-caps */
+.link {
+    font-variant: small-caps;
+    display: inline-block;
+    margin-top: 10px;
+}
