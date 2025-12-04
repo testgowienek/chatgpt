@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Selektory CSS – ćwiczenie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Selektory CSS – notatka</h1>
+
+<nav>
+    <a href="#zad1">Zadanie 1</a> |
+    <a href="#zad2">Zadanie 2</a>
+</nav>
+
+<!-- ================= SEKCJA 1 ================= -->
+<section>
+    <h2>Selektor dziecka</h2>
+
+    <p><b>Opis:</b> Selektor dziecka wybiera tylko te elementy, które są
+    bezpośrednimi dziećmi danego elementu.</p>
+
+    <p><b>Składnia:</b> rodzic > dziecko</p>
+
+    <div class="box">
+        <p>To jest dziecko diva ✅</p>
+        <span>
+            <p>To NIE jest bezpośrednie dziecko ❌</p>
+        </span>
+    </div>
+</section>
+
+<!-- ================= SEKCJA 2 ================= -->
+<section>
+    <h2>Selektor sąsiadującego brata</h2>
+
+    <p><b>Opis:</b> Wybiera tylko pierwszy element, który znajduje się
+    bezpośrednio po innym.</p>
+
+    <p><b>Składnia:</b> element + element</p>
+
+    <h3>Nagłówek</h3>
+    <p>Ten paragraf jest pierwszym sąsiadem ✅</p>
+    <p>Ten już NIE jest ❌</p>
+</section>
+
+<!-- ================= SEKCJA 3 ================= -->
+<section>
+    <h2>Selektor braci (dowolnego rodzeństwa)</h2>
+
+    <p><b>Opis:</b> Wybiera wszystkie elementy, które są rodzeństwem danego
+    elementu i znajdują się po nim.</p>
+
+    <p><b>Składnia:</b> element ~ element</p>
+
+    <h2>Nagłówek H2</h2>
+    <p>Paragraf 1 ✅</p>
+    <p>Paragraf 2 ✅</p>
+    <p>Paragraf 3 ✅</p>
+</section>
+
+<!-- ================= ZADANIE 1 ================= -->
+<section id="zad1">
+    <h2>ZADANIE 1</h2>
+
+    <h3>Nagłówek h3</h3>
+    <p>Ten paragraf powinien być żółty ✅</p>
+    <p>Ten już NIE powinien ❌</p>
+</section>
+
+<!-- ================= ZADANIE 2 ================= -->
+<section id="zad2">
+    <h2>ZADANIE 2</h2>
+
+    <p>Ten tekst ma być kursywą ✅</p>
+    <p>Ten również ✅</p>
+</section>
+
+</body>
+</html>
+
+
+
+
+body {
+    font-family: Arial;
+    margin: 30px;
+}
+
+section {
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* ===== SELEKTOR DZIECKA ===== */
+.box > p {
+    color: green;
+    font-weight: bold;
+}
+
+/* ===== SELEKTOR SĄSIADUJĄCEGO BRATA ===== */
+h3 + p {
+    background-color: yellow;
+}
+
+/* ===== SELEKTOR BRACI ===== */
+h2 ~ p {
+    color: blue;
+}
+
+/* ===== ZADANIE 1 ===== */
+/* Pokoloruj tylko pierwszy paragraf po h3 na żółto */
+#zad1 h3 + p {
+    background-color: yellow;
+}
+
+/* ===== ZADANIE 2 ===== */
+/* Ustaw kursywę wszystkim paragrafom po h2 */
+#zad2 h2 ~ p {
+    font-style: italic;
+}
