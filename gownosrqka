@@ -1,0 +1,15 @@
+table {
+    border-collapse: collapse;
+}
+
+/* TYLKO KOMÓRKI Z DANYMI MAJĄ RAMKI */
+td {
+    border: 1px solid pink;
+    padding: 8px;
+}
+
+/* NAGŁÓWKI BEZ RAMEK */
+th {
+    padding: 8px;
+    font-weight: bold;
+}
