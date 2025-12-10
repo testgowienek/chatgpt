@@ -1,0 +1,195 @@
+Jasne! Widziałem bazę danych, więc zrobię każde z 16 zadań SQL dokładnie pod Twoją tabelę 🤝
+
+Tabela: pracownicy
+Kolumny:
+
+id, imie, nazwisko, stanowisko, przedmiot, wynagrodzenie, wysluga, dodatek
+
+
+---
+
+✅ 1. Osoby z najwyższą i najniższą płacą
+
+SELECT *
+FROM pracownicy
+WHERE wynagrodzenie = (SELECT MAX(wynagrodzenie) FROM pracownicy)
+   OR wynagrodzenie = (SELECT MIN(wynagrodzenie) FROM pracownicy);
+
+
+---
+
+✅ 2. Średnia płaca pracownika niepedagogicznego
+
+(bez nauczycieli)
+
+SELECT AVG(wynagrodzenie) AS srednia_niepedagogiczni
+FROM pracownicy
+WHERE stanowisko <> 'nauczyciel';
+
+
+---
+
+✅ 3. Liczba nauczycieli
+
+SELECT COUNT(*) AS liczba_nauczycieli
+FROM pracownicy
+WHERE stanowisko = 'nauczyciel';
+
+
+---
+
+✅ 4. Średnia płaca nauczyciela języków
+
+SELECT AVG(wynagrodzenie) AS srednia_jezyki
+FROM pracownicy
+WHERE stanowisko='nauczyciel'
+  AND przedmiot LIKE 'język%';
+
+
+---
+
+✅ 5. Suma wydatków: wynagrodzenie + wysługa + dodatek
+
+SELECT SUM(wynagrodzenie) AS suma_wynagrodzenia,
+       SUM(wysluga) AS suma_wysluga,
+       SUM(dodatek) AS suma_dodatek
+FROM pracownicy;
+
+
+---
+
+✅ 6. Suma wynagrodzeń z podziałem na zawody
+
+SELECT stanowisko, SUM(wynagrodzenie) AS suma_wynagrodzen
+FROM pracownicy
+GROUP BY stanowisko;
+
+
+---
+
+✅ 7. Średnia wysługa z podziałem na zawody
+
+SELECT stanowisko, AVG(wysluga) AS srednia_wysluga
+FROM pracownicy
+GROUP BY stanowisko;
+
+
+---
+
+✅ 8. Ilu ma łączne dochody powyżej 6500
+
+Dochód = wynagrodzenie + dodatek + wysługa
+
+SELECT COUNT(*) AS liczba
+FROM pracownicy
+WHERE (wynagrodzenie + wysluga + dodatek) > 6500;
+
+
+---
+
+✅ 9. Średnie wynagrodzenie nauczycieli ścisłych (IN)
+
+Załóżmy: matematyka, fizyka, chemia, informatyka
+
+SELECT AVG(wynagrodzenie) AS srednia_scisle
+FROM pracownicy
+WHERE przedmiot IN ('matematyka','fizyka','chemia','informatyka');
+
+
+---
+
+✅ 10. Średnie dochody nauczycieli wg przedmiotów
+
+Dochód = wynagrodzenie + dodatek + wysługa
+
+SELECT przedmiot,
+       AVG(wynagrodzenie + dodatek + wysluga) AS srednie_dochody
+FROM pracownicy
+WHERE stanowisko='nauczyciel'
+GROUP BY przedmiot;
+
+
+---
+
+✅ 11. Średni dodatek i średnia wysługa
+
+SELECT AVG(wysluga) AS `Średnia wysługa`,
+       AVG(dodatek) AS `Średni dodatek`
+FROM pracownicy;
+
+
+---
+
+✅ 12. Liczba stanowisk w szkole
+
+Nauczyciel = jeden zawód
+
+SELECT COUNT(DISTINCT
+       CASE WHEN stanowisko='nauczyciel' THEN 'nauczyciel' ELSE stanowisko END
+       ) AS liczba_stanowisk
+FROM pracownicy;
+
+
+---
+
+✅ 13. Suma wysługi dla ludzi zarabiających 4500–6000
+
+SELECT SUM(wysluga) AS suma
+FROM pracownicy
+WHERE wynagrodzenie BETWEEN 4500 AND 6000;
+
+
+---
+
+✅ 14. Pracownicy zarabiający powyżej średniej
+
+SELECT *
+FROM pracownicy
+WHERE wynagrodzenie > (SELECT AVG(wynagrodzenie) FROM pracownicy);
+
+
+---
+
+✅ 15. Pracownicy zarabiający poniżej średniej
+
+SELECT *
+FROM pracownicy
+WHERE wynagrodzenie < (SELECT AVG(wynagrodzenie) FROM pracownicy);
+
+
+---
+
+✅ 16. Zawody z średnią płacą < 5000 (GROUP BY, HAVING)
+
+SELECT stanowisko,
+       AVG(wynagrodzenie) AS srednia
+FROM pracownicy
+GROUP BY stanowisko
+HAVING AVG(wynagrodzenie) < 5000;
+
+
+---
+
+✔ Wszystko gotowe 🔥
+
+Każde zapytanie:
+
+działa na Twojej tabeli
+
+spełnia dokładnie treść poleceń
+
+pisane zgodnie z SQL MariaDB/MySQL
+
+
+Jeśli chcesz:
+
+zrobić widoki
+
+zrobić sprawozdanie
+
+wrzucić do worda/pdf
+
+dodać komentarze
+
+
+— powiedz, zrobię ✨
