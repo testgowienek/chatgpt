@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wczasy w Grecji</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="card">
+    <div class="inner">
+        <h2>Wczasy w Grecji</h2>
+
+        <div class="image-wrap">
+            <a href="https://www.booking.com" target="_blank">
+                <img src="greece.jpg" alt="Grecki krajobraz">
+            </a>
+        </div>
+
+        <ul class="features">
+            <li>Hotel 4*</li>
+            <li>All inclusive</li>
+            <li>Przelot w cenie</li>
+        </ul>
+
+        <p class="price">Cena: 2499 zł</p>
+    </div>
+</section>
+
+</body>
+</html>
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* Główna ramka */
+.card {
+    border: 3px solid purple;
+    background: white;
+    padding: 20px;
+    width: 420px;
+}
+
+.inner {
+    border: 1px solid #999;
+    padding: 15px;
+}
+
+/* Tytuł – wyśrodkowany, rozstrzelone litery, wielkie litery */
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin-top: 0;
+}
+
+/* Zdjęcie – link + zielona ramka kropkowana 3px */
+.image-wrap img {
+    width: 100%;
+    border: 3px dotted green;
+}
+
+/* Lista – kolor niebieski */
+.features {
+    color: blue;
+}
+
+.features li {
+    margin: 6px 0;
+}
+
+/* Cena – czerwony, duże litery */
+.price {
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
