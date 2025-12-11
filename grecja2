@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wczasy w Grecji</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box">
+    <h2>Wczasy w Grecji</h2>
+
+    <a href="https://www.booking.com" target="_blank">
+        <img src="greece.jpg" alt="Grecja">
+    </a>
+
+    <ul>
+        <li>Hotel 4*</li>
+        <li>All inclusive</li>
+        <li>Przelot w cenie</li>
+    </ul>
+
+    <p class="cena">Cena: 2499 zł</p>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background: #f2f2f2;
+}
+
+/* cała ramka */
+.box {
+    border: 3px solid purple;
+    padding: 15px;
+    width: 400px;
+    background: white;
+}
+
+/* tytuł: wyśrodkowany + wielkie litery + rozstrzelone */
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-top: 0;
+}
+
+/* zdjęcie – link + zielona kropkowana ramka */
+img {
+    width: 100%;
+    border: 3px dotted green;
+    margin: 10px 0;
+}
+
+/* lista niebieska */
+ul {
+    color: blue;
+}
+
+/* cena czerwona i duże litery */
+.cena {
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+}
