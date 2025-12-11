@@ -1,0 +1,76 @@
+Jasne — zrobię to dokładnie zgodnie z poleceniem: lista zainteresowań (min. 5), własny punktor z wybraną grafiką, dopasowany rozmiar, użyte podstawowe reguły CSS.
+
+Poniżej masz gotowy przykład HTML + CSS, który możesz wkleić do swojego pliku.
+
+
+---
+
+✅ Gotowe rozwiązanie
+
+HTML
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista zainteresowań</title>
+</head>
+<body>
+
+<h2>Moje zainteresowania</h2>
+
+<ul class="custom-list">
+    <li>Programowanie</li>
+    <li>Muzyka elektroniczna</li>
+    <li>Piłka nożna</li>
+    <li>Fotografia</li>
+    <li>Gry komputerowe</li>
+</ul>
+
+</body>
+</html>
+
+
+---
+
+CSS (style.css)
+
+(ustawiam własny punktor – obrazek, rozmiar, marginesy itd.)
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-list li {
+    background: url("https://cdn-icons-png.flaticon.com/512/1828/1828884.png") no-repeat left center;
+    /* ↑ możesz podmienić link na dowolną grafikę */
+    
+    background-size: 24px;     /* rozmiar ikonki */
+    padding-left: 35px;        /* odstęp, żeby tekst się nie nachodził na ikonkę */
+    margin-bottom: 12px;       /* odstęp między elementami */
+    font-size: 20px;
+}
+
+
+---
+
+Jeśli chcesz, mogę:
+
+🔹 zmienić grafikę na inną
+🔹 dopasować kolory, czcionki, styl
+🔹 zrobić wersję bardziej zaawansowaną
+
+Powiedz tylko!
