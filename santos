@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kawa Brazylijska Santos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box">
+
+    <h2 id="tytul">Kawa Brazylijska Santos</h2>
+
+    <p id="opis">
+        Wysokiej klasy brazylijska kawa o delikatnym, czekoladowym
+        aromacie. Charakterystyczna słodycz stonowana jest lekkim
+        orzechowym posmakiem. 
+    </p>
+
+    <ul class="lista">
+        <li>Łagodna w smaku</li>
+        <li>Nuta czekolady</li>
+        <li>Niska kwasowość</li>
+        <li>Ziarna z mielenia</li>
+    </ul>
+
+    <table class="tabela">
+        <tr>
+            <th>Pochodzenie</th>
+            <td>Brazylia</td>
+        </tr>
+        <tr>
+            <th>Palarnia</th>
+            <td>Serdeczna</td>
+        </tr>
+        <tr>
+            <th>Arabica / Robusta</th>
+            <td>100% Arabica</td>
+        </tr>
+        <tr>
+            <th>Waga opakowania</th>
+            <td>1000 g</td>
+        </tr>
+    </table>
+
+    <a href="#" class="kup">Kup teraz</a>
+
+</div>
+
+</body>
+</html>
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* KONTENER */
+.box {
+    width: 420px;
+}
+
+/* TYTUŁ — cień, wyśrodkowany, duże litery, letter-spacing 1px */
+#tytul {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px grey;
+}
+
+/* PARAGRAF — wyśrodkowany */
+#opis {
+    text-align: center;
+}
+
+/* LISTA — różowa, font-size 20px */
+.lista {
+    list-style-type: disc;
+    color: hotpink;
+    font-size: 20px;
+}
+
+/* TABELA — niebieskie obramowanie kropkowane 1px */
+.tabela {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.tabela th,
+.tabela td {
+    border: 1px dotted blue;
+    padding: 4px;
+}
+
+/* LINK — czerwony, pogrubiony, duże litery, bez podkreślenia */
+.kup {
+    display: inline-block;
+    margin-top: 15px;
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
