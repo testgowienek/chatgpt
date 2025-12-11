@@ -1,0 +1,15 @@
+Możesz to odtworzyć w HTML/CSS mniej więcej tak:
+
+<ul class="moja-lista">
+    <li>Element pierwszy</li>
+    <li>Element drugi</li>
+    <li>Element trzeci</li>
+</ul>
+
+.moja-lista {
+    list-style-position: outside;   /* punktor na zewnątrz */
+    color: purple;                  /* fioletowa czcionka */
+    text-transform: uppercase;      /* duże litery */
+}
+
+Po wstawieniu tego do swojego projektu dostaniesz efekt jak na slajdzie.
