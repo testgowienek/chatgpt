@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Biblioteka</title>
+<style>
+.box {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5d5;
+    border: 3px solid darkgreen;
+    color: #333;
+    width: 450px;
+    padding: 15px;
+}
+
+.box h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.box ul {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.box a {
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.box a:hover {
+    color: darkred;
+}
+
+.box a:visited {
+    color: olive;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Biblioteka Miejska</h2>
+    <p>
+        Biblioteka oferuje dostęp do tysięcy książek, czasopism oraz materiałów
+        multimedialnych. Zapraszamy wszystkich mieszkańców do korzystania z
+        naszych zbiorów.
+    </p>
+
+    <ul>
+        <li>Poniedziałek – Piątek: 9:00–18:00</li>
+        <li>Sobota: 9:00–14:00</li>
+        <li>Niedziela: nieczynne</li>
+    </ul>
+
+    <a href="#">Sprawdź katalog</a>
+</div>
+
+</body>
+</html>
