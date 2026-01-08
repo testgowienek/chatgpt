@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Cennik usług</title>
+<style>
+body {
+    font-family: Verdana, sans-serif;
+}
+
+table {
+    border: 2px dotted black;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 2px dotted black;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+th {
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+
+<table>
+    <caption>Cennik usług</caption>
+    <tr>
+        <th>Usługa</th>
+        <th>Czas</th>
+        <th>Cena</th>
+    </tr>
+    <tr>
+        <td>Wymiana oleju</td>
+        <td>30 min</td>
+        <td>120 zł</td>
+    </tr>
+    <tr>
+        <td>Diagnostyka</td>
+        <td>45 min</td>
+        <td>150 zł</td>
+    </tr>
+</table>
+
+</body>
+</html>
