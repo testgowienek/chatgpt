@@ -1,0 +1,6 @@
+p {
+    background-color: #f2f5d5;   /* kolor tła */
+    width: 700px;               /* szerokość */
+    height: 300px;              /* wysokość */
+    border: 5px solid gray;     /* obramowanie: linia ciągła, 5px, szara */
+}
