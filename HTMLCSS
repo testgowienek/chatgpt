@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec erat eu eros porttitor ultricies hendrerit at justo. Nunc semper augue nec tellus ultrices, vel porta mauris dictum. Nam placerat condimentum metus id imperdiet. Nullam vel hendrerit massa. Cras blandit pharetra neque. Aenean ipsum metus, tristique id dui sit amet, dictum dictum justo. Pellentesque maximus risus id arcu egestas, a condimentum justo aliquet. Donec nisl dolor, viverra in porttitor vel, imperdiet quis nisl. Vestibulum et augue auctor, bibendum nunc a, hendrerit turpis. Mauris non ante sit amet turpis malesuada posuere. Integer interdum ipsum est. Cras pharetra, sapien a euismod aliquam, sapien sem commodo ligula, ac eleifend tellus magna et urna. Vivamus sem magna, elementum et lacus ut, vehicula iaculis lectus.
+        Pellentesque venenatis odio sit amet tortor rutrum, vel ultrices mauris ullamcorper. Maecenas sed sem ut lacus pretium tincidunt. Nullam ac aliquet magna, quis pretium lacus. Aliquam in viverra turpis, quis tincidunt ex. Quisque tincidunt, tellus eget dictum laoreet, mauris sem finibus nisi, eget gravida magna odio eget justo. Aliquam a elit sed nulla rhoncus tincidunt a sit amet felis. Nunc ut sem vitae purus tristique condimentum. Nam consequat ante velit, id pellentesque magna gravida non. Aenean nec diam scelerisque, rhoncus arcu ac, suscipit orci.
+        Proin vulputate justo at arcu mattis, non scelerisque tortor feugiat. Nunc mollis posuere erat bibendum aliquet. Nulla scelerisque risus vitae libero vestibulum ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse nec rutrum ex, et sodales augue. Aenean elementum a augue at condimentum. Sed vestibulum viverra massa ut egestas. In vel ipsum vitae mauris scelerisque convallis. Ut ac fringilla enim. Pellentesque dolor turpis, malesuada a metus sed, ullamcorper ultricies leo. Nulla id suscipit neque. Sed non est aliquam, volutpat justo id, bibendum nunc.
+        Phasellus tristique interdum vestibulum. Nunc eget pretium tellus, a sagittis urna. Curabitur vel ultrices est. Morbi a erat tortor. Nunc eu purus hendrerit, malesuada neque nec, mollis enim. Ut nunc tellus, scelerisque eu luctus molestie, faucibus in odio. Mauris fermentum vel dui in tincidunt.
+        Vestibulum at vehicula velit. Quisque vel dignissim nunc. Nulla efficitur ac sem at varius. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam fermentum venenatis est quis commodo. Sed ac pellentesque quam, non accumsan velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend tempor ultrices.
+    </p>
+    </main>
+    
+</body>
+</html>
+
+
+p{
+    width: 500px;
+    height: 250px;
+}
