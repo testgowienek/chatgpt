@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>ZDOBYWCY GÓR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Klub zdobywców gór polskich</h1>
+</header>
+
+<nav>
+    <a href="kw1.png">kwerenda1</a>
+    <a href="kw2.png">kwerenda2</a>
+    <a href="kw3.png">kwerenda3</a>
+    <a href="kw4.png">kwerenda4</a>
+</nav>
+
+<main>
+    <section id="left">
+        <img src="logo.png" alt="logo zdobywcy">
+        <h3>razem z nami:</h3>
+        <ul>
+            <li>wyjazdy</li>
+            <li>szkolenia</li>
+            <li>rekreacja</li>
+            <li>wypoczynek</li>
+            <li>wyzwania</li>
+        </ul>
+    </section>
+
+    <section id="right">
+        <h2>Dołącz do naszego zespołu!</h2>
+        <p>Wpisz swoje dane do formularza:</p>
+
+        <form method="post" action="">
+            <label>Nazwisko:
+                <input type="text" name="nazwisko">
+            </label><br><br>
+
+            <label>Imię:
+                <input type="text" name="imie">
+            </label><br><br>
+
+            <label>Funkcja:
+                <select name="funkcja">
+                    <option>uczestnik</option>
+                    <option>przewodnik</option>
+                    <option>zaopatrzeniowiec</option>
+                    <option>organizator</option>
+                    <option>ratownik</option>
+                </select>
+            </label><br><br>
+
+            <label>Email:
+                <input type="email" name="email">
+            </label><br><br>
+
+            <input type="submit" value="Dodaj">
+        </form>
+
+        <table>
+            <tr>
+                <th>Nazwisko</th>
+                <th>Imię</th>
+                <th>Funkcja</th>
+                <th>Email</th>
+            </tr>
+        </table>
+    </section>
+</main>
+
+<footer>
+    <p>Stronę wykonał: 123456</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+body {
+    background-color: #DDEEDD;
+    font-family: Tahoma;
+    text-align: center;
+}
+
+header, footer {
+    color: white;
+    font-size: 120%;
+    padding: 10px;
+}
+
+header {
+    background-color: #409FFF;
+}
+
+footer {
+    background-color: #A0A0A0;
+}
+
+nav {
+    background-color: #FFFFFF;
+    padding: 10px;
+    word-spacing: 30px;
+}
+
+a {
+    color: #009900;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+}
+
+#left {
+    background-color: #E4C0A8;
+    width: 30%;
+    height: 650px;
+}
+
+#right {
+    width: 70%;
+    height: 650px;
+    overflow: auto;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    text-align: left;
+}
+
+img {
+    width: 90%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    margin: 20px auto;
+}
