@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Piekarnia Pod Czarną Gąską</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded" rel="stylesheet">
+<style>
+@import url(bakery-styles.css);
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="">Menu</a></li>
+      <li><a href="">Aktualności</a></li>
+      <li><a href="">O piekarni</a></li>
+      <li><a href="">Kontakt</a></li>
+    </ul>
+  </nav>  
+  <h1><img src="images/bgb_logo.png" alt="Piekarnia Pod Czarną Gąską"></h1>
+  <p>Wyborne produkty Bistro "Pod Czarną Gąską"...masz teraz na wynos!</p>
+</header>
+
+<main>
+  <h2>Prosto z pieca</h2>
+  <h3>Chleby</h3>
+  <p><img src="images/bread.png" alt="okrągły bochenek chleba leżący na desce do krojenia"> Nasz chleb wypiekamy codziennie z najwyższej jakości mąki, wody, soli, drożdży lub zakwasu. To proste i naturalne, nigdy nie stosujemy żadnych konserwantów. Cierpliwość jest kluczem do osiągnięcia odpowiedniego poziomu fermentacji i doprowadzenia każdego bochenka chleba do perfekcji. Oferujemy różne rodzaje chleba m.in.: pełnoziarnisty, na zakwasie, razowy, żytni oraz chleb z cebulą i ziemniakami.</p>
+  <p class="more"><a href="">Dowiedz się więcej o naszych wypiekach...</a></p>
+
+  <h3>Babeczki</h3>
+  <p><img src="images/muffin.png" alt="babeczka czekoladowa"> Każdego dnia oferujemy duży wybór babeczek m.in.: borówkowe, jagodowe, z otrębami, kukurydziane, cytrynowe z makiem oraz czekoladowe. Codziennie pieczemy świeże babeczki. Zajrzyj do nas na babeczki z owocami sezonowymi!</p>
+  <p class="more"><a href="">Dowiedz się więcej o tym, jak przygotowujemy babeczki...</a></p>
+</main>
+
+<aside>
+  <h2>Godziny otwarcia</h2>
+  <p><span class="day">poniedziałek:</span> 5 do 15</p>
+  <p><span class="day">wtorek:</span> 5 do 15</p>
+  <p><span class="day">środa:</span> 5 do 15</p>
+  <p><span class="day">czwartek:</span> 5 do 15</p>
+  <p><span class="day">piątek:</span> 5 do 15</p>
+  <p><span class="day">sobota:</span> 6 do 16</p>
+  <p><span class="day">niedziela:</span> 6 do 16</p>
+</aside>
+
+<footer>
+  <p>Wszelkie prawa zastrzeżone &copy; 2017, Piekarnia Pod Czarną Gąską.</p>
+</footer>
+
+</body>
+</html>
+
+
+
+html{
+  box-sizing: border-box;
+}
+*{
+  box-sizing: inherit;
+}
+body {
+  font-family: Georgia, serif;
+  font-size: 100%;
+  background-color: white;
+}
+
+/* Style łączy. */
+a:link, a:visited { color: #DC6903; }
+a:focus, a:hover, a:active { color: #F9AB33; }
+
+
+/* Style nagłówka. */
+header {
+  color: white;
+  background:  url(images/croissants_banner.jpg) no-repeat center center;
+  background-size: cover; 
+  text-align: center;
+}
+header p {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+/* Style nawigacji. */
+nav, footer {
+  font-family: verdana, sans-serif;
+  background-color: #783F27;
+}
+nav ul li a:link, nav ul li a:visited {
+  color: #F9AB33;
+}
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+  color: #fff;
+}
+nav ul li {
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+/* Style "produktów" głównych. */
+main {
+  font-family: 'Stint Ultra Expanded', cursive;
+  background-color: white;
+  line-height: 1.8em;
+  color: #555;
+}
+h3 {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: #7A0002;
+}
+p.more {
+  font-family: verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+/* Style paska bocznego. */
+aside {
+  background: url(images/scallop.png) repeat-y left top;
+  background-color: #F6F3ED;
+}
+/* Pozostałe style. */
+footer {
+  color: #EADDC4;
+  text-align: center;
+  font-size: .8em;
+}
+h2 {
+  font-family: 'Stint Ultra Expanded', cursive;
+}
+.day {
+  color: #783F27;
+  font-family: verdana, sans-serif;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+
+
