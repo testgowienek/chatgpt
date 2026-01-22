@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Ćwiczenie – obramowania</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p class="p1">Cztery różne style obramowania</p>
+
+<p class="p2">
+Kolor obramowania kasztanowy na górze i dole,
+zielony po bokach. Linia ciągła, grubości 3px
+</p>
+
+<p class="p3">
+Grubości obramowania na górze i dole 20px,
+z prawej 3em, z lewej 1em. Kolor zielony,
+linia kropkowana
+</p>
+
+</body>
+</html>
+
+
+
+p {
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Paragraf 1 – cztery różne style */
+.p1 {
+    border-top: 5px solid black;
+    border-right: 5px dashed black;
+    border-bottom: 5px dotted black;
+    border-left: 5px double black;
+}
+
+/* Paragraf 2 – kasztanowy góra/dół, zielony boki */
+.p2 {
+    border-top: 3px solid brown;
+    border-bottom: 3px solid brown;
+    border-left: 3px solid green;
+    border-right: 3px solid green;
+}
+
+/* Paragraf 3 – różne grubości, zielona linia kropkowana */
+.p3 {
+    border-top: 20px dotted green;
+    border-bottom: 20px dotted green;
+    border-left: 1em dotted green;
+    border-right: 3em dotted green;
+}
