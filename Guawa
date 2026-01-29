@@ -1,0 +1,250 @@
+obecnosc
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Obecność</title>
+<link rel="stylesheet" href="zad1.css">
+</head>
+<body>
+
+<table>
+  <tr>
+    <th colspan="3">OBECNOŚĆ UCZNIÓW</th>
+  </tr>
+  <tr>
+    <th>Uczeń</th>
+    <th>Status</th>
+    <th>Uwagi</th>
+  </tr>
+  <tr>
+    <td>Jan Kowalski</td>
+    <td class="obecny">Obecny</td>
+    <td>Spóźnienie 10 minut</td>
+  </tr>
+  <tr>
+    <td>Anna Nowak</td>
+    <td class="nieobecny">Nieobecna</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Katarzyna Czereśnia</td>
+    <td class="obecny">Obecna</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Krzysztof Niebyt</td>
+    <td class="nieobecny">Nieobecny</td>
+    <td>Zwolnienie</td>
+  </tr>
+  <caption>Lista obecności</caption>
+</table>
+
+</body>
+</html>
+
+
+
+
+table {
+  width: 85%;
+  border-collapse: collapse;
+}
+
+caption {
+  caption-side: bottom;
+  font-weight: bold;
+}
+
+th {
+  background-color: #d9ead3;
+  text-align: center;
+}
+
+td {
+  text-align: left;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.obecny {
+  background-color: green;
+  color: white;
+}
+
+.nieobecny {
+  background-color: red;
+  color: white;
+}
+
+
+
+
+
+
+plal lekcji
+
+
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Plan 5EI</title>
+<link rel="stylesheet" href="zad2.css">
+</head>
+<body>
+
+<table>
+<caption>5EI</caption>
+<tr>
+  <th>Nr</th>
+  <th>Godz</th>
+  <th>Poniedziałek</th>
+  <th>Wtorek</th>
+  <th>Środa</th>
+  <th>Czwartek</th>
+  <th>Piątek</th>
+</tr>
+
+<tr>
+  <td class="nr">1</td>
+  <td class="godz">8:00-8:45</td>
+  <td class="pn">WF</td>
+  <td class="wt">Programowanie</td>
+  <td class="sr">Eksploatacja</td>
+  <td class="cz">Aplikacje</td>
+  <td class="pt">j.polski</td>
+</tr>
+
+<tr>
+  <td class="nr">2</td>
+  <td class="godz">8:50-9:35</td>
+  <td class="pn">WF</td>
+  <td class="wt">Angielski</td>
+  <td class="sr">Projekt</td>
+  <td class="cz">Aplikacje</td>
+  <td class="pt">j.polski</td>
+</tr>
+</table>
+
+</body>
+</html>
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+caption {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #f1c232;
+}
+
+th {
+  background-color: #f1c232;
+}
+
+.nr { background-color: #ffe599; }
+.godz { background-color: #fff2cc; }
+.pn { background-color: #d9d2e9; }
+.wt { background-color: #ead1dc; }
+.sr { background-color: #d9ead3; }
+.cz { background-color: #cfe2f3; }
+.pt { background-color: #fce5cd; }
+
+
+
+
+
+
+plan 4 ti
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Plan 4TI</title>
+<link rel="stylesheet" href="zad3.css">
+</head>
+<body>
+
+<table>
+<caption>Plan lekcji klasy 4TI</caption>
+
+<tr>
+  <th colspan="5">PLAN LEKCJI</th>
+</tr>
+
+<tr>
+  <th>Dzień</th>
+  <th>1</th>
+  <th>2</th>
+  <th>3</th>
+  <th>4</th>
+</tr>
+
+<tr>
+  <td>Poniedziałek</td>
+  <td>INF</td>
+  <td>MAT</td>
+  <td>ANG</td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Wtorek</td>
+  <td colspan="2">PROGRAMOWANIE</td>
+  <td>WF</td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Środa</td>
+  <td>INF</td>
+  <td></td>
+  <td>ANG</td>
+  <td>Filozofia</td>
+</tr>
+
+</table>
+
+</body>
+</html>
+
+
+
+
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+caption {
+  font-weight: bold;
+}
+
+th {
+  background-color: #cfe2f3;
+  text-align: center;
+}
+
+td {
+  text-align: left;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
