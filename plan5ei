@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Plan lekcji 5EI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="title">5EI</div>
+
+    <table>
+        <tr>
+            <th>Nr</th>
+            <th>Godz</th>
+            <th>Poniedziałek</th>
+            <th>Wtorek</th>
+            <th>Środa</th>
+            <th>Czwartek</th>
+            <th>Piątek</th>
+        </tr>
+
+        <tr>
+            <td>0</td>
+            <td>7:05 - 7:50</td>
+            <td></td><td></td><td></td><td></td><td></td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>8:00 - 8:45</td>
+            <td><a href="#">wf-1/3 #5w. KOR</a></td>
+            <td><a href="#">prac.eks.urz-1/2 PP PE</a></td>
+            <td><a href="#">ekspl.urz.-1/2 PP 214</a></td>
+            <td><a href="#">tworz.aplik.-2/2 RF P07</a></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>8:50 - 9:35</td>
+            <td><a href="#">wf-1/3 #5w. KOR</a><br><a href="#">wf-2/3 #w5. SG</a></td>
+            <td><a href="#">prac.eks.urz-1/2 PP PE</a><br><a href="#">r_ang_n-2/2 D 204</a></td>
+            <td><a href="#">ekspl.urz.-1/2 PP 214</a><br><a href="#">Projekt.i ad-2/2 PZ 207</a></td>
+            <td><a href="#">tworz.aplik.-2/2 RF P07</a></td>
+            <td><a href="#">j.polski KO 205</a></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>9:40 - 10:25</td>
+            <td><a href="#">matematyka BX 208</a></td>
+            <td><a href="#">prac.eks.urz-1/2 PP PE</a><br><a href="#">j.angielski-2/2 D 214</a></td>
+            <td><a href="#">ekspl.urz.-1/2 PP 214</a><br><a href="#">Projekt.i ad-2/2 PZ 207</a></td>
+            <td><a href="#">j.niemiecki-1/2 KJ 103</a><br><a href="#">tworz.aplik.-2/2 RF P07</a></td>
+            <td><a href="#">j.polski KO 205</a></td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>10:35 - 11:20</td>
+            <td><a href="#">r_ang_n-1/2 PI 214</a><br><a href="#">j.angielski-2/2 D P03</a></td>
+            <td><a href="#">godz.wych KJ 103</a></td>
+            <td><a href="#">ekspl.urz.-1/2 PP 214</a><br><a href="#">Projekt.i ad-2/2 PZ 207</a></td>
+            <td><a href="#">j.angielski-1/2 PI SJG</a><br><a href="#">tworz.aplik.-2/2 RF P07</a></td>
+            <td><a href="#">matematyka BX 208</a></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>11:35 - 12:20</td>
+            <td><a href="#">j.angielski-1/2 PI 214</a><br><a href="#">j.angielski-2/2 D P03</a></td>
+            <td><a href="#">matematyka BX 208</a></td>
+            <td><a href="#">matematyka BX 208</a></td>
+            <td><a href="#">j.angielski-1/2 PI SJG</a><br><a href="#">r_ang_n-2/2 D 08</a></td>
+            <td><a href="#">historia VB 105</a></td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>12:25 - 13:10</td>
+            <td><a href="#">r_ang_n-1/2 PI 214</a><br><a href="#">j.niemiecki-2/2 KJ 103</a></td>
+            <td><a href="#">wf-1/3 #5w. SGH</a></td>
+            <td><a href="#">wos AT 105</a></td>
+            <td><a href="#">wf-2/3 #w5. SGH</a></td>
+            <td><a href="#">religia-1/2 #r5 214</a></td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td>13:20 - 14:05</td>
+            <td><a href="#">j.polski KO 205</a></td>
+            <td></td>
+            <td><a href="#">j.polski KO 205</a></td>
+            <td><a href="#">wf-2/3 #w5. SG</a></td>
+            <td></td>
+        </tr>
+
+    </table>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.title {
+    background-color: #f1c232; /* żółty nagłówek */
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid #7f7f7f;
+    padding: 6px;
+    text-align: center;
+}
+
+th {
+    background-color: #f1c232;
+    color: white;
+}
+
+td {
+    background-color: #fff8dc; /* lekko kremowe */
+}
+
+a {
+    color: #1155cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
