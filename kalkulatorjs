@@ -1,0 +1,30 @@
+let a = Number(prompt("Podaj pierwszą liczbę:"));
+let b = Number(prompt("Podaj drugą liczbę:"));
+let operator = prompt("Podaj znak działania (+, -, *, /, **, %):");
+
+let wynik;
+
+switch (operator) {
+    case '+':
+        wynik = a + b;
+        break;
+    case '-':
+        wynik = a - b;
+        break;
+    case '*':
+        wynik = a * b;
+        break;
+    case '/':
+        wynik = b !== 0 ? a / b : "Błąd: dzielenie przez zero";
+        break;
+    case '**':
+        wynik = a ** b;
+        break;
+    case '%':
+        wynik = b !== 0 ? a % b : "Błąd: dzielenie przez zero";
+        break;
+    default:
+        wynik = "Nieprawidłowy operator!";
+}
+
+alert("Wynik: " + wynik);
