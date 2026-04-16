@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<body>
+
+    <h3>Gra w zgadywanie</h3>
+
+    Zakres od: <input type="number" id="min" value="1"><br>
+    Zakres do: <input type="number" id="max" value="100"><br>
+    
+    <button onclick="start()">Wylosuj liczbę</button>
+    
+    <hr>
+    
+    Twoja propozycja: <input type="number" id="strzal">
+    <button onclick="sprawdz()">Sprawdź</button>
+
+    <p id="info"></p>
+
+    <script>
+        let wylosowana;
+
+        function start() {
+            let a = parseInt(document.getElementById('min').value);
+            let b = parseInt(document.getElementById('max').value);
+
+            if (b < a) {
+                alert("Błąd: Druga liczba nie może być mniejsza od pierwszej!");
+                return;
+            }
+
+            // Losowanie z podanego zakresu
+            wylosowana = Math.floor(Math.random() * (b - a + 1)) + a;
+            document.getElementById('info').innerText = "Wylosowano! Zgaduj.";
+        }
+
+        function sprawdz() {
+            let strzal = parseInt(document.getElementById('strzal').value);
+            let p = document.getElementById('info');
+
+            if (strzal > wylosowana) p.innerText = "Za dużo!";
+            else if (strzal < wylosowana) p.innerText = "Za mało!";
+            else p.innerText = "Brawo! To ta liczba.";
+        }
+    </script>
+
+</body>
+</html>
