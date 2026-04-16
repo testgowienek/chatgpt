@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<body>
+
+    <button onclick="oblicz()">Uruchom symulację</button>
+    <p id="wynik"></p>
+
+    <script>
+        function oblicz() {
+            let proby = 0;
+            let trafienia = 0;
+
+            while (trafienia < 10) {
+                proby++;
+                let liczba = Math.floor(Math.random() * 100) + 1;
+                if (liczba === 10) {
+                    trafienia++;
+                }
+            }
+
+            document.getElementById('wynik').innerText = 
+                "Potrzeba było " + proby + " prób, aby wylosować liczbę 10 dziesięć razy.";
+        }
+    </script>
+
+</body>
+</html>
