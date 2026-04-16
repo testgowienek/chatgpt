@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rzut kostką</title>
+</head>
+<body>
+
+<h2>Generator rzutów kostką</h2>
+
+<button onclick="rzucJedna()">Jedna kostka</button>
+<p id="jedna"></p>
+
+<button onclick="rzucDwie()">Dwie kostki</button>
+<p id="dwie"></p>
+
+<script>
+function rzucJedna() {
+    let wynik = Math.floor(Math.random() * 6) + 1;
+    document.getElementById("jedna").innerText = "Jedna kostka: " + wynik;
+}
+
+function rzucDwie() {
+    let k1 = Math.floor(Math.random() * 6) + 1;
+    let k2 = Math.floor(Math.random() * 6) + 1;
+    let suma = k1 + k2;
+
+    document.getElementById("dwie").innerText = "Dwie kostki: " + suma;
+}
+</script>
+
+</body>
+</html>
