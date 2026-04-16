@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<body>
+
+<h3>Zgadnij liczbę</h3>
+
+Od: <input type="number" id="min" value="1"><br>
+Do: <input type="number" id="max" value="100"><br>
+
+<button onclick="losuj()">Losuj</button>
+
+<hr>
+
+<input type="number" id="strzal" placeholder="Twoja liczba">
+<button onclick="check()">OK</button>
+
+<p id="info"></p>
+
+<script>
+let liczba;
+
+function losuj() {
+    let min = +document.getElementById("min").value;
+    let max = +document.getElementById("max").value;
+
+    if (min > max) {
+        alert("Zły zakres");
+        return;
+    }
+
+    liczba = Math.floor(Math.random() * (max - min + 1)) + min;
+    info.innerText = "Zgaduj!";
+}
+
+function check() {
+    let x = +strzal.value;
+
+    if (x == liczba) info.innerText = "Dobrze!";
+    else if (x > liczba) info.innerText = "Za dużo";
+    else info.innerText = "Za mało";
+}
+</script>
+
+</body>
+</html>
