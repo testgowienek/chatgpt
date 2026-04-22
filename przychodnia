@@ -1,0 +1,144 @@
+-- =========================================
+-- 1. TWORZENIE BAZY DANYCH
+-- =========================================
+
+CREATE DATABASE przychodnia_kowalski;
+USE przychodnia_kowalski;
+
+-- =========================================
+-- 2. TABELA LEKARZE
+-- =========================================
+
+CREATE TABLE lekarze (
+    ID_lekarzy INT AUTO_INCREMENT PRIMARY KEY,
+    imie VARCHAR(25) NOT NULL,
+    nazwisko VARCHAR(25) NOT NULL,
+    specjalizacja VARCHAR(50) NOT NULL,
+    adres_email VARCHAR(70) NOT NULL,
+    nr_telefonu VARCHAR(9) NOT NULL,
+    kod_pocztowy VARCHAR(6) NOT NULL,
+    miejscowosc VARCHAR(30) NOT NULL,
+    ulica VARCHAR(60),
+    nr_domu INT(5) NOT NULL,
+    nr_lokalu INT(5)
+);
+
+-- =========================================
+-- 3. TABELA PACJENCI
+-- =========================================
+
+CREATE TABLE pacjenci (
+    ID_pacjenci INT AUTO_INCREMENT PRIMARY KEY,
+    imie VARCHAR(25) NOT NULL,
+    nazwisko VARCHAR(25) NOT NULL,
+    PESEL VARCHAR(11) NOT NULL UNIQUE,
+    adres_email VARCHAR(70),
+    nr_telefonu VARCHAR(9) NOT NULL
+);
+
+-- =========================================
+-- 4. TABELA SWIADCZENIA
+-- =========================================
+
+CREATE TABLE swiadczenia (
+    ID_swiadczenia INT AUTO_INCREMENT PRIMARY KEY,
+    rodzaj_swiadczenia VARCHAR(50) NOT NULL,
+    koszt_swiadczenia FLOAT NOT NULL
+);
+
+-- =========================================
+-- 5. TABELA WIZYTY
+-- =========================================
+
+CREATE TABLE wizyty (
+    ID_wizyty INT AUTO_INCREMENT PRIMARY KEY,
+    rodzaj_swiadczenia INT NOT NULL,
+    pacjent INT NOT NULL,
+    lekarz INT NOT NULL,
+    data_wizyty DATE NOT NULL,
+
+    CONSTRAINT fk_swiadczenie
+        FOREIGN KEY (rodzaj_swiadczenia)
+        REFERENCES swiadczenia(ID_swiadczenia),
+
+    CONSTRAINT fk_pacjent
+        FOREIGN KEY (pacjent)
+        REFERENCES pacjenci(ID_pacjenci),
+
+    CONSTRAINT fk_lekarz
+        FOREIGN KEY (lekarz)
+        REFERENCES lekarze(ID_lekarzy)
+);
+
+-- =========================================
+-- 6. DANE TESTOWE - LEKARZE
+-- =========================================
+
+INSERT INTO lekarze
+(imie, nazwisko, specjalizacja, adres_email, nr_telefonu, kod_pocztowy, miejscowosc, ulica, nr_domu, nr_lokalu)
+VALUES
+('Jan', 'Kowalski', 'Kardiolog', 'jan.kowalski@wp.pl', '501234567', '00-001', 'Warszawa', 'Lipowa', 12, 5),
+('Anna', 'Nowak', 'Dermatolog', 'anna.nowak@gmail.com', '502345678', '31-002', 'Krakow', 'Dluga', 8, 2),
+('Piotr', 'Wisniewski', 'Ortopeda', 'piotr.w@onet.pl', '503456789', '80-003', 'Gdansk', 'Morska', 22, NULL),
+('Maria', 'Zielinska', 'Pediatra', 'maria.z@interia.pl', '504567891', '60-004', 'Poznan', 'Polna', 14, 7),
+('Tomasz', 'Lewandowski', 'Neurolog', 't.lewandowski@gmail.com', '505678912', '90-005', 'Lodz', 'Kwiatowa', 3, NULL),
+('Karolina', 'Mazur', 'Okulista', 'karolina.mazur@wp.pl', '506789123', '15-006', 'Bialystok', 'Lesna', 45, 10),
+('Michal', 'Kaczmarek', 'Laryngolog', 'm.kaczmarek@onet.pl', '507891234', '70-007', 'Szczecin', 'Sloneczna', 9, 1),
+('Agnieszka', 'Dabrowska', 'Psychiatra', 'a.dabrowska@gmail.com', '508912345', '40-008', 'Katowice', 'Spacerowa', 16, 4);
+
+-- =========================================
+-- 7. DANE TESTOWE - PACJENCI
+-- =========================================
+
+INSERT INTO pacjenci
+(imie, nazwisko, PESEL, adres_email, nr_telefonu)
+VALUES
+('Adam', 'Kowalczyk', '99010112345', 'adam@gmail.com', '600111222'),
+('Ewa', 'Nowicka', '02020223456', NULL, '601222333'),
+('Pawel', 'Wojcik', '03030334567', 'pawel@wp.pl', '602333444'),
+('Magda', 'Kaminska', '04040445678', 'magda@gmail.com', '603444555'),
+('Krzysztof', 'Lis', '05050556789', NULL, '604555666'),
+('Natalia', 'Sikora', '06060667890', 'natalia@onet.pl', '605666777'),
+('Jakub', 'Baran', '07070778901', 'jakub@gmail.com', '606777888'),
+('Monika', 'Czarnecka', '08080889012', NULL, '607888999');
+
+-- =========================================
+-- 8. DANE TESTOWE - SWIADCZENIA
+-- =========================================
+
+INSERT INTO swiadczenia
+(rodzaj_swiadczenia, koszt_swiadczenia)
+VALUES
+('Badanie krwi', 120.50),
+('RTG', 250.00),
+('USG', 180.00),
+('Konsultacja kardiologiczna', 300.00),
+('Konsultacja dermatologiczna', 220.00),
+('Szczepienie', 90.00),
+('EKG', 150.00),
+('Rehabilitacja', 200.00);
+
+-- =========================================
+-- 9. DANE TESTOWE - WIZYTY
+-- =========================================
+
+INSERT INTO wizyty
+(rodzaj_swiadczenia, pacjent, lekarz, data_wizyty)
+VALUES
+(1, 1, 1, '2025-01-10'),
+(2, 2, 2, '2025-01-12'),
+(3, 3, 3, '2025-01-15'),
+(4, 4, 1, '2025-01-18'),
+(5, 5, 2, '2025-01-20'),
+(6, 6, 4, '2025-01-22'),
+(7, 7, 5, '2025-01-25'),
+(8, 8, 6, '2025-01-28');
+
+-- =========================================
+-- 10. SPRAWDZENIE DANYCH
+-- =========================================
+
+SELECT * FROM lekarze;
+SELECT * FROM pacjenci;
+SELECT * FROM swiadczenia;
+SELECT * FROM wizyty;
