@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Wisielec</title>
+</head>
+<body>
+
+<h1>Gra w wisielca</h1>
+
+<p id="haslo"></p>
+<input type="text" id="litera" maxlength="1">
+<button onclick="zgaduj()">Zgadnij</button>
+
+<p id="komunikat"></p>
+<p id="proby"></p>
+
+<script>
+const slowo = "komputer";
+const haslo = slowo.split("");
+
+let odgadniete = new Array(haslo.length).fill("_");
+let uzyteLitery = [];
+
+let liczbaProb = 0;
+
+function pokazHaslo() {
+    document.getElementById("haslo").innerText = odgadniete.join(" ");
+}
+
+function zgaduj() {
+    let litera = document.getElementById("litera").value.toLowerCase();
+    document.getElementById("litera").value = "";
+
+    if (litera === "") return;
+
+    if (uzyteLitery.includes(litera)) {
+        document.getElementById("komunikat").innerText = "Ta litera już była!";
+        return;
+    }
+
+    uzyteLitery.push(litera);
+    liczbaProb++;
+
+    let trafiona = false;
+
+    for (let i = 0; i < haslo.length; i++) {
+        if (haslo[i] === litera) {
+            odgadniete[i] = litera;
+            trafiona = true;
+        }
+    }
+
+    if (trafiona) {
+        document.getElementById("komunikat").innerText = "Dobrze!";
+    } else {
+        document.getElementById("komunikat").innerText = "Źle!";
+    }
+
+    pokazHaslo();
+
+    document.getElementById("proby").innerText = "Liczba prób: " + liczbaProb;
+
+    if (!odgadniete.includes("_")) {
+        document.getElementById("komunikat").innerText = "Wygrałeś! Liczba prób: " + liczbaProb;
+    }
+}
+
+pokazHaslo();
+</script>
+
+</body>
+</html>
