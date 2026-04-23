@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 2</title>
+</head>
+<body>
+
+<h2>Zadanie 2</h2>
+<button onclick="wykonaj()">Generuj i oblicz</button>
+
+<p id="wynik"></p>
+
+<script>
+function wykonaj() {
+    let tablica = [];
+
+    for (let i = 0; i < 50; i++) {
+        tablica.push(Math.floor(Math.random() * 100) + 1);
+    }
+
+    let suma = 0;
+    for (let i = 0; i < tablica.length; i++) {
+        suma += tablica[i];
+    }
+
+    let srednia = suma / tablica.length;
+    let najwieksza = Math.max(...tablica);
+    let najmniejsza = Math.min(...tablica);
+
+    let licznik = 0;
+    for (let i = 0; i < tablica.length; i++) {
+        if (tablica[i] === 10) {
+            licznik++;
+        }
+    }
+
+    document.getElementById("wynik").innerHTML =
+        "Tablica: " + tablica.join(", ") + "<br><br>" +
+        "Średnia: " + srednia.toFixed(2) + "<br>" +
+        "Największa liczba: " + najwieksza + "<br>" +
+        "Najmniejsza liczba: " + najmniejsza + "<br>" +
+        "Liczba 10 wystąpiła: " + licznik + " razy";
+}
+</script>
+
+</body>
+</html>
